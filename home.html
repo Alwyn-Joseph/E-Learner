@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <link rel="icon" type="image/png" href="ELogo.png">
     <style>
-        .header{
+        .header {
             background-color: white;
             position: fixed;
             width: 1700%;
@@ -13,24 +15,28 @@
             right: 0px;
             left: 0px;
             bottom: 89%;
-            border-style:groove;
+            border-style: groove;
             box-sizing: border-box;
             box-shadow: inset;
             border-color: rgb(226, 226, 226);
         }
-        .logImg{
+
+        .logImg {
             padding-top: 0px;
             padding-left: 0.65%;
         }
-        .Heading{
-            font-size:300%;
-            font-family:'Courier New', Courier, monospace;
+
+        .Heading {
+            font-size: 300%;
+            font-family: 'Courier New', Courier, monospace;
             margin-left: 20%;
         }
-        .rb:hover{
+
+        .rb:hover {
             background-color: rgb(69, 224, 134);
         }
-        .rb{
+
+        .rb {
             background-color: rgb(160, 200, 245);
             padding: 0;
             border-style: none;
@@ -41,17 +47,19 @@
             color: #535353;
             border-radius: 5px;
             margin-left: 20%;
-            font-family:'Courier New', Courier, monospace;
+            font-family: 'Courier New', Courier, monospace;
             transition-duration: 0.5s;
             font-size: 130%;
         }
-        #headDiv{
+
+        #headDiv {
             background-image: url(sHeadImg.png);
             background-position: 50%;
             background-size: contain;
             background-repeat: no-repeat;
         }
-        .FormPopUp{
+
+        .FormPopUp {
             display: none;
             font-family: 'Courier New', Courier, monospace;
             border-radius: 10px;
@@ -60,13 +68,14 @@
             z-index: 9;
             width: 400px;
             margin-left: 550px;
-            position:fixed;
+            position: fixed;
             background-image: url(ContetBg.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
-        .FormPopUpL{
+
+        .FormPopUpL {
             display: none;
             font-family: 'Courier New', Courier, monospace;
             border-radius: 10px;
@@ -75,54 +84,68 @@
             z-index: 9;
             width: 400px;
             margin-left: 550px;
-            position:fixed;
+            position: fixed;
             background-image: url(ContetBg.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
-        .fContainer{
+
+        .fContainer {
             max-width: 300px;
-            margin-left: 50px ;
+            margin-left: 50px;
             padding: 10px;
         }
-        .fContainer input[type=text], .fContainer input[type=password], .fContainer input[type=email] {
+
+        .fContainer input[type=text],
+        .fContainer input[type=password],
+        .fContainer input[type=email] {
             width: 80%;
             padding: 15px;
             margin: 5px 0 22px 0;
             border: none;
             background: #e0e0e0;
         }
-        .fContainer input[type=text]:focus, .fContainer input[type=password]:focus, .fContainer input[type=email]:focus {
+
+        .fContainer input[type=text]:focus,
+        .fContainer input[type=password]:focus,
+        .fContainer input[type=email]:focus {
             background-color: rgb(236, 236, 236);
             outline: none;
         }
-        .fContainer .btnCls, .fContainer .btnSub {
+
+        .fContainer .btnCls,
+        .fContainer .btnSub {
             background-color: #04AA6D;
             color: white;
             padding: 16px 20px;
             border: none;
             cursor: pointer;
             width: 75%;
-            margin-bottom:10px;
+            margin-bottom: 10px;
             margin-left: 20px;
             opacity: 0.8;
             border-radius: 3px;
         }
+
         .fContainer .btnCls {
             background-color: #d6a418;
         }
-        .fContainer .btn:hover, .open-button:hover {
-             opacity: 1;
+
+        .fContainer .btn:hover,
+        .open-button:hover {
+            opacity: 1;
         }
-        .closeB{
+
+        .closeB {
             width: 1px;
             margin-left: 275px;
             height: 2px;
             border: none;
-            background-color:white;
+            background-color: white;
         }
-        #how{
+
+        #how {
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
             font-size: 32px;
@@ -130,30 +153,34 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 200%;
-            list-style:none;
+            list-style: none;
         }
-        #Course{
+
+        #Course {
             font-family: 'Courier New', Courier, monospace;
             font-size: 32px;
             background-image: url(CourseBG.png);
             background-repeat: no-repeat;
-            margin-left: 10%; 
+            margin-left: 10%;
         }
-        #Tools{
+
+        #Tools {
             font-family: 'Courier New', Courier, monospace;
             font-size: 32px;
             background-image: url(CourseBG\ \(2\).png);
             background-repeat: no-repeat;
             margin-left: 10%;
         }
-        #Themes{
+
+        #Themes {
             font-family: 'Courier New', Courier, monospace;
             font-size: 32px;
             background-image: url(CourseBG.png);
             background-repeat: no-repeat;
-            margin-left: 10%; 
-        }   
-        footer{
+            margin-left: 10%;
+        }
+
+        footer {
             background-position: 200%;
             background-repeat: no-repeat;
             background-size: contain;
@@ -162,157 +189,164 @@
             list-style: none;
             font-family: 'Courier New', Courier, monospace;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        #body{
-            overflow:scroll;            
+
+        #body {
+            overflow: scroll;
         }
     </style>
     <title>Home | E-Learner</title>
 </head>
-    <body id="body" scroll="no" >  
-    <div>    
+
+<body id="body" scroll="no">
+    <div>
         <div class="header">
             <img class="logImg" width="150" height="82" src="HeadLogo.png" alt="Logo">
         </div>
-            <br>
-            <br><br><br><br>
-            <br>
-    <div id="hDiv">
-        <div id="headDiv">
-            <br>
-        <div class="Heading">
-            Your Journey<br>
-            as a tutor<br>
-            <b>easier than<br> 
-            ever</b>
-        </div>
-            <br>
-        <div id="createBtn">
-        <button type="submit" class="rb"  onclick="openFormR()"><b>Register Now</b></button>
-        </div>
-            <br>
-        </div>
-        <div id="how">
-            <br>
+        <br>
+        <br><br><br><br>
+        <br>
+        <div id="hDiv">
+            <div id="headDiv">
+                <br>
+                <div class="Heading">
+                    Your Journey<br>
+                    as a tutor<br>
+                    <b>easier than<br>
+                        ever</b>
+                </div>
+                <br>
+                <div id="createBtn">
+                    <button type="submit" class="rb" onclick="openFormR()"><b>Register Now</b></button>
+                </div>
+                <br>
+            </div>
+            <div id="how">
+                <br>
                 <h2><b>How it works?<br></b></h2>
                 <h3>Just 3 Steps</h3>
                 <img src="AC.png" alt="JoinUs">
                 <li>Create Your Account</li>
-                
+
                 <br>
                 <img src="Create.png" alt="JoinUs">
                 <li>Provide Your Details...</li>
-                
+
                 <br>
                 <img src="Ready.png" alt="JoinUs">
                 <li>You are Ready to go!</li>
-                
-            <br>
-        </div>
-        <div id="Course">
-            <br>
-            <h2>
-                <img style="width: 35%;margin-top: 0%; float: left;
+
+                <br>
+            </div>
+            <div id="Course">
+                <br>
+                <h2>
+                    <img style="width: 35%;margin-top: 0%; float: left;
             padding: 0 150px 20px 0" src="Snap.png" alt="CourseContent">
-                <b>Course creation
-                <br>in a snap</b></h2>
+                    <b>Course creation
+                        <br>in a snap</b>
+                </h2>
                 <span style="font-size: 28px;">Reuse your presentations
-                <br>and videos or choose from a wide
-                <br>range of online material with our 
-                <br>social integrations. Make stunning
-                <br>courses with minimal effort.</span>
-        </div>
+                    <br>and videos or choose from a wide
+                    <br>range of online material with our
+                    <br>social integrations. Make stunning
+                    <br>courses with minimal effort.</span>
+            </div>
             <br>
             <br>
             <br>
-        <div id="Tools">
-            <br>
-            <h2><img style="width: 35%;margin-top: 0%; float: right;
+            <div id="Tools">
+                <br>
+                <h2><img style="width: 35%;margin-top: 0%; float: right;
             padding: 0px  10% 20px 0" src="Tools.png" alt="CourseContent">
-            <b>Distraction-Free and
-            <br>Easy to use tools</b></h2>
-            <span style="font-size: 28px;">With a highly intuitive interface,
-            <br>E-Learner creates a distraction-free 
-            <br>environment and makes learning a 
-            <br>breeze. Your learners navigate through 
-            <br>the platform easily, and access 
-            <br>information in a snap.</span>
-        </div>
+                    <b>Distraction-Free and
+                        <br>Easy to use tools</b>
+                </h2>
+                <span style="font-size: 28px;">With a highly intuitive interface,
+                    <br>E-Learner creates a distraction-free
+                    <br>environment and makes learning a
+                    <br>breeze. Your learners navigate through
+                    <br>the platform easily, and access
+                    <br>information in a snap.</span>
+            </div>
             <br>
             <br>
             <br>
-        <div id="Course">
-            <br>
-            <h2>
-            <img style="width: 40%;margin-top: 0%; float: left;
+            <div id="Course">
+                <br>
+                <h2>
+                    <img style="width: 40%;margin-top: 0%; float: left;
             padding: 0 85px 20px 0" src="Themes.png" alt="CourseContent">
-            <b>Be the way
-            <br>you are.</b></h2>
-            <span style="font-size: 28px;">You can have custom logo, and
-            <br>theme. Create an environment
-            <br>that is entirely your choice.
-            <br>Fully customisze your portal
-            <br>to match your brand.</span>
-        </div>
+                    <b>Be the way
+                        <br>you are.</b>
+                </h2>
+                <span style="font-size: 28px;">You can have custom logo, and
+                    <br>theme. Create an environment
+                    <br>that is entirely your choice.
+                    <br>Fully customisze your portal
+                    <br>to match your brand.</span>
+            </div>
             <br>
             <br>
-        <footer>
-            <table>
-        <td>
-        <div style="margin-left: 150%;margin-top: 20%;">
-            <h4>Platform</h4>
-            <li><a href="Home.html">Overview</a></li><br>
-            <li><a href="Home.html">Features</a></li><br>
-            <li><a href="Home.html">Integrations</a></li><br>
-            <li><a href="Home.html">Pricing</a></li><br>
+            <footer>
+                <table>
+                    <td>
+                        <div style="margin-left: 150%;margin-top: 20%;">
+                            <h4>Platform</h4>
+                            <li><a href="Home.html">Overview</a></li><br>
+                            <li><a href="Home.html">Features</a></li><br>
+                            <li><a href="Home.html">Integrations</a></li><br>
+                            <li><a href="Home.html">Pricing</a></li><br>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="margin-left: 140%;margin-top: 27%;">
+                            <h4>Help</h4>
+                            <li><a href="Home.html">Help Center</a></li><br>
+                            <li><a href="Home.html">FAQ</a></li><br>
+                            <li><a href="Home.html">Privacy</a></li><br>
+                            <li><a href="Home.html">Terms of Service</a></li><br>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="margin-left: 260%;margin-top: 10%;">
+                            <h4>Learn</h4>
+                            <li><a href="Home.html">Blog</a></li><br>
+                            <li><a href="Home.html">eBooks</a></li><br>
+                            <li><a href="Home.html">Blended</a></li><br>
+                            <li><a href="Home.html">Learning</a></li><br>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="margin-left: 160%;margin-top: 10%;">
+                            <h4>Company</h4>
+                            <li><a href="Home.html">About Us</a></li><br>
+                            <li><a href="Home.html">FAX</a></li><br>
+                            <li><a href="Home.html">Customer Success</a></li><br>
+                            <li><a href="Home.html">Contact Us</a></li><br>
+                        </div>
+                    </td>
+                </table>
+            </footer>
             <br>
+            <hr>
+            <center>
+                <h3 style="font-family: 'Courier New', Courier, monospace;">E-Learner</h3>
+            </center>
         </div>
-        </td>
-        <td>
-        <div style="margin-left: 140%;margin-top: 27%;">
-            <h4>Help</h4>
-            <li><a href="Home.html">Help Center</a></li><br>
-            <li><a href="Home.html">FAQ</a></li><br>
-            <li><a href="Home.html">Privacy</a></li><br>
-            <li><a href="Home.html">Terms of Service</a></li><br>
-            <br>
-        </div>
-        </td>
-        <td>
-        <div style="margin-left: 260%;margin-top: 10%;">
-            <h4>Learn</h4>
-            <li><a href="Home.html">Blog</a></li><br>
-            <li><a href="Home.html">eBooks</a></li><br>
-            <li><a href="Home.html">Blended</a></li><br>
-            <li><a href="Home.html">Learning</a></li><br>
-            <br>
-        </div>
-        </td>
-        <td>
-            <div style="margin-left: 160%;margin-top: 10%;">
-            <h4>Company</h4>
-            <li><a href="Home.html">About Us</a></li><br>
-            <li><a href="Home.html">FAX</a></li><br>
-            <li><a href="Home.html">Customer Success</a></li><br>
-            <li><a href="Home.html">Contact Us</a></li><br>
-        </div>
-        </td>
-        </table>
-        </footer>
-            <br><hr>
-        <center>
-            <h3 style="font-family: 'Courier New', Courier, monospace;">AJ</h3>
-        </center>
-    </div>
     </div>
     <div class="FormPopUp" id="regForm">
         <form action="Home.html" class="fContainer" method="POST">
             <button type="submit" class="closeB" onclick="closeForm()">
                 <img style="cursor: pointer;" width="50px" src="Exit.png" alt="Close">
             </button>
-            
+
             <center style="font-size: 30px;"><b>Register Now</b></center>
             <br>
             <label for="text"><b>Name</b></label>
@@ -320,7 +354,7 @@
 
             <label for="email"><b>Email</b></label>
             <input type="email" name="email" placeholder="Your Mail" required>
-            
+
             <label for="psw"><b>Password</b></label>
             <input type="password" name="password" placeholder="Your Password" required>
 
@@ -332,15 +366,15 @@
     </div>
     <div class="FormPopUpL" id="logForm">
         <form action="Home.html" class="fContainer" method="POST">
-            <button type="submit" class="closeB"  onclick="closeForm()">
+            <button type="submit" class="closeB" onclick="closeForm()">
                 <img style="cursor: pointer;" width="50px" src="Exit.png" alt="Close">
             </button>
-            
+
             <center style="font-size: 30px;"><b>Welcome Back</b></center>
             <br>
             <label for="email"><b>Email</b></label>
             <input type="text" name="emailL" placeholder="Your Email" required>
-            
+
             <label for="psw"><b>Password</b></label>
             <input type="password" name="passwordL" placeholder="Your Password" required>
 
@@ -353,25 +387,25 @@
 
     <script>
         //To open Registration Form
-        function openFormR(){
-            document.getElementById("regForm").style.display="block";
-            document.getElementById("logForm").style.display="none";
-            document.getElementById("body").style.overflow="hidden";
+        function openFormR() {
+            document.getElementById("regForm").style.display = "block";
+            document.getElementById("logForm").style.display = "none";
+            document.getElementById("body").style.overflow = "hidden";
         }
         //To Close both Forms
-        function closeForm(){
-            document.getElementById("regForm").style.display="none";
-            document.getElementById("logForm").style.display="none";
-            document.getElementById("body").style.overflow="scroll";
+        function closeForm() {
+            document.getElementById("regForm").style.display = "none";
+            document.getElementById("logForm").style.display = "none";
+            document.getElementById("body").style.overflow = "scroll";
         }
         //To open Login Form
-        function openLoginForm(){
-            document.getElementById("logForm").style.display="block";
-            document.getElementById("regForm").style.display="none";
-            document.getElementById("body").style.overflow="hidden";
+        function openLoginForm() {
+            document.getElementById("logForm").style.display = "block";
+            document.getElementById("regForm").style.display = "none";
+            document.getElementById("body").style.overflow = "hidden";
         }
 
     </script>
-    </body>
-</html>
+</body>
 
+</html>
